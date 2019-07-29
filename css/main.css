@@ -17,7 +17,7 @@ body {
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
+	width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ h4 {
 p {
 	font-size: 0.75em;
 	line-height: 21px;
-  padding: 0 30px;
+  
 }
 
 /*The widths are in a percentage!*/
@@ -59,13 +59,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 100%;
   flex-flow: row wrap;
+   text-align: center;
 }
 
 header h1 {
 	margin: 0;
-	padding: 20px 0;
+  width: 100%;
+	padding: 20px 30px;
 	border-bottom: 3px solid #77a466;
 }
 
@@ -74,25 +76,22 @@ header h1 span {
 }
 
 header nav {
-	padding: 20px 0;
-  display: flex;
+	display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+ 
+  
     }
 
-header nav ul {
-	margin: 0;
-	padding: 0;
-  
-  
-}
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.75em;
-	padding: 10px 10px;
-    list-style: none;
+	padding: 10px 0;
+  list-style: none;
+
 }
 
 header nav ul li a{
@@ -113,28 +112,17 @@ header nav ul li a{
 
 }
 
-.main-image {
-	height: auto;
-    padding: 0 30px;
-
-	
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
+  border-top: 3px solid #77a466;
 }
 
-.main-title {
-	height: auto;
-	
-}
 .main-title h3 {
 	text-align: left;
-	padding: 10px 30px;;
-	color: #77a466;
+  color: #77a466;
 }
 .main-title p {
-	padding: 10px 30px;;
 	font-size: 1em;
 	line-height: 25px;
 }
@@ -143,29 +131,14 @@ header nav ul li a{
 .section-two,
 .section-three {
 	width: 100%;
-	height: auto;
-	
-	border-top: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 
-.section-one h4 {
-	padding: 10px 30px;
-  
-}
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
 
 .menu {
 	list-style: none;
-	padding: 0 30px;
+	
 }
 .menu li {
 	padding: 10px 0;
@@ -185,7 +158,7 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
+	
   width: 100%;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
@@ -202,4 +175,18 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.75em;
+}
+/*==========MEDIA-QUERIES==========*/
+
+
+@media all and (min-width: 768px) {
+  /*tablet styles here*/
+  
+  
+}
+
+@media all and (min-width: 1200px) {
+  /*desktop styles here*/
+  
+  
 }
