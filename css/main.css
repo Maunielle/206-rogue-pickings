@@ -61,7 +61,7 @@ header {
   align-items: center;
   width: 100%;
   flex-flow: row wrap;
-   text-align: center;
+  text-align: center;
 }
 
 header h1 {
@@ -80,18 +80,18 @@ header nav {
   justify-content: center;
   align-items: center;
   width: 100%;
- 
-  
-    }
+ }
 
+ul{
+  padding: 0;
+}
 
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.75em;
-	padding: 10px 0;
+	padding: 10px 0px;
   list-style: none;
-
 }
 
 header nav ul li a{
@@ -138,6 +138,7 @@ header nav ul li a{
 
 .menu {
 	list-style: none;
+
 	
 }
 .menu li {
@@ -145,6 +146,9 @@ header nav ul li a{
 	color:#77a466;
 }
 
+menu ul li {
+  padding-left: 0px;
+}
 .reviews {
 	color: #333;
 	font-size: 1em;
@@ -182,7 +186,29 @@ footer span {
 @media all and (min-width: 768px) {
   /*tablet styles here*/
   
+  .bottom-section{
+  margin: 0 auto;
+	clear: both;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; 
+  border-top: 1px solid #eee;
+   }
   
+.section-one,
+.section-two,
+.section-three {
+	width: 30%;
+  border: none;
+ }
+  
+.section-two {
+	border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  padding: 0 25px;
+  
+ }
+
 }
 
 @media all and (min-width: 1200px) {
