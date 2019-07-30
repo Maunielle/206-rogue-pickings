@@ -208,11 +208,18 @@ footer span {
   padding: 0 25px;
   
  }
+  
+  footer span{
+    font-size: 1.6em;
+  }
 
 }
 
 @media all and (min-width: 1200px) {
   /*desktop styles here*/
+  
+  
+  
   
   
 }
